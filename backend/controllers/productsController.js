@@ -4,6 +4,9 @@ const asyncHandler = require("express-async-handler");
 const getProducts = asyncHandler(async (req, res) => {
   const products = await Product.find({});
   // throw new Error("Some Eror");
+  console.log('e')
+  console.log(products)
+  console.log('new')
   res.json(products);
 });
 
